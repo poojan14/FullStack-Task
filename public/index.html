@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    /> 
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <h1>Form Data</h1>
+    <form>
+      <h4>Enter your details:</h4>
+      <div class="form-control">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          class="poly-input"
+          placeholder="e.g. Jayesh"
+        />
+        <label for="color">Select Color:</label>       
+<select>  
+<option value = "BLUE"> BLUE   
+</option>  
+<option value = "GREEN"> GREEN  
+</option>  
+<option value = "YELLOW"> YELLOW  
+</option>  
+<option value = "RED">  RED  
+</option>  
+</select> 
+        <button type="submit" class="btn submit-btn">Submit</button>
+      </div>
+      <div class="form-alert"></div>
+    </form>
+    <section class="poly-container">
+      <p class="loading-text">Loading...</p>
+      <div class="poly"></div>
+    </section>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./browser-app.js"></script>
+  </body>
+</html>
